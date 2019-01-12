@@ -73,3 +73,60 @@ library(tidyverse)
 ##rm
 #rm permanantly deletes the files unlike rmdir (which puts the files in the bin)
 #need to use arguments to remove directories.
+
+
+#If you want to look at a file quickly you can use less
+##less something.txt
+
+#.rda extension stands for rdata. .RData is also fine.
+
+##git clone url
+
+#Git can tell you how these files relate to the version
+#of the files in other areas with the command git status.
+##git status
+
+#We add a file to the staging area with the git add command.
+##git add
+#gid add does the following
+library(imager)
+image<-load.image("C:/Users/aksha/Desktop/R/Productivity Tools/git add.png")
+plot(image,axes = F)
+
+#The following code creates a file with the word "test" in it.
+##echo "test" >> new-file.txt
+
+#Commit a file using git commit
+##git commit
+library(imager)
+image<-load.image("C:/Users/aksha/Desktop/R/Productivity Tools/git commit.png")
+plot(image,axes = F)
+
+#we can skip the staging part by adding the filename to the code
+##echo "adding  a second line"
+
+#Now we can keep track of all the changes we
+#have made by using the git log command.
+#If we do it with the newfile.txt, we can see all the commits that
+#have been done to our local repository. We do this using:
+##git log
+
+#So to update our local repository to be like the upstream repository,
+#we use the command git fetch
+
+#Other functions are in this image:
+library(imager)
+image<-load.image("C:/Users/aksha/Desktop/R/Productivity Tools/Summary Functions.png")
+plot(image,axes = F)
+
+#git pull = git fetch + git merge
+
+##git init
+#git initialize.
+#By typing git init in the command line, assuming we're in the right directory,
+#this turns the directory into a Git directory
+#and Git starts tracking everything.
+
+#To connect our local repository to our upstream repository:
+## git remote add origin url
+## git push
